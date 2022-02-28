@@ -1,0 +1,293 @@
+  <style>
+
+      /*1.먼저는 코드를 정리하고,
+      2.text에 보더를 줘서 각각의 영역을 확실하게 체크해보자
+      border: 5px solid red
+      3.*/
+
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  padding: 0px;
+  margin: 0px;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:visited {
+  color: #000;
+}
+
+/*Background*/
+.dim {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: 2;
+}
+
+/* NAV:상단바 */
+.nav-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #000;
+  z-index: 4;
+}
+.nav-content-left {
+  display: flex;
+}
+.nav-content-left .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  font-size: 18px;
+  margin-right: 70px;
+}
+.nav-content-left ul {
+  display: block;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  padding-inline-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+.nav-content-left ul li {
+  display: inline-block;
+  margin-right: 30px;
+}
+.nav-content-right .btn {
+  border: 1px solid #000;
+  display: inline-block;
+  padding: 10px;
+  margin: 0;
+  width: auto;
+  height: auto;
+}
+.nav-content-right .btn:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+
+/* codingis */
+.codingis {
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.codingis-video video {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.content {
+  position: relative;
+  padding: 0 25px;
+  margin-top: 150px;
+  margin-left: 200px;
+  max-width: 1150px;
+  min-width: 320px;
+  z-index: 3;
+  color: #fff;
+  font-weight: 900;
+  font-size: 52px;
+}
+
+
+
+
+.bg-black {
+  position: relative;
+  background-color: #000;
+  color: #fff;
+
+  }
+
+.blank {
+  border: white solid 5px;
+}
+
+.btn {
+  display: inline;
+  padding: 18px 30px;
+  margin: 0px;
+  border-radius: 6px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: 900;
+  width: 186px;
+  height: 40px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.btn a {
+  text-decoration: none;
+  color: #000;
+}
+      /* SECTION */
+.section {
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    }
+
+ .desc {
+    font-weight:900px;
+    font-size:40px;
+    }
+
+/* SECTION BIRTH */
+.process {
+  background-image: url(./backgroundph/pexels-valeria-boltneva-10875220.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.process .content {
+  margin-left: 200px;
+}
+.iwanttobe {
+  background-image: url(backgroundph/clem-onojeghuo-zlABb6Gke24-unsplash.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+/* SECTION UNIV */
+.empathy {
+  background-image: url(backgroundph/cozyface.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+
+/* SECTION TOGETHER */
+.creative {
+  background-image: url(backgroundph/creativedrawing.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.creative .content {
+  margin-left: 200px;
+ }
+
+.sense {
+  background-image: url(backgroundph/apartments-g4cdfa8b62_1920.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+/*}*/
+/*#section-empathy {*/
+/*  border-style: solid;*/
+/*  border-color: red;*/
+/*  border-width: 5px;*/
+
+}
+/*#moveit{*/
+   /*display: block;*/
+  /*text-align: right;*/
+
+}
+/*.section-empathy{*/
+/*  border: red solid 5px;*/
+/*  }*/
+
+
+.hope {
+  background-image: url(backgroundph/wecode.png);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+
+.blank {
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+    /*display: block;*/
+    width: 200px;
+    or display: inline;
+}
+
+}
+
+/* SECTION EMAIL */
+#section-hope {
+  margin-top: 400px;
+}
+
+.hope {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.hope .content {
+  margin-left: 200px;
+  color: #000;
+}
+.hope .content .address {
+  font-size: 28px;
+}
+
+    </style>
